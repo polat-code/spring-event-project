@@ -4,9 +4,11 @@ import com.example.springeventproject.event.ComedyCircusEvent;
 import com.example.springeventproject.event.TheBigBangTheoryEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope("prototype")
 public class ZeeCafePublisher {
     @Autowired
     private ApplicationEventPublisher applicationEventPublisher;
