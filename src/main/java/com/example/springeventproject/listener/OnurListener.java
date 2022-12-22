@@ -14,6 +14,7 @@ public class OnurListener implements ApplicationListener<TheBigBangTheoryEvent>
 
     //@EventListener
     // if you want to use EventListener then you should remove "ApplicationListener<TheBigBangTheoryEvent>"
+    // Also we can change the method name "onApplicationEvent" with any name.
     @Override
     public void onApplicationEvent(TheBigBangTheoryEvent event) {
         watchBigBang(event.getEpisodeNo());

@@ -12,6 +12,7 @@ public class SpringEventProjectApplication {
 		ApplicationContext applicationContext = SpringApplication.run(SpringEventProjectApplication.class, args);
 		ZeeCafePublisher zeeCafePublisher = applicationContext.getBean("zeeCafePublisher",ZeeCafePublisher.class);
 		zeeCafePublisher.streamBigBangTheory("EP - 004");
+		zeeCafePublisher.streamComedyCircus("CC - 005");
 	}
 
 }

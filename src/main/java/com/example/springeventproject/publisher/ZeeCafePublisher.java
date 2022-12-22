@@ -1,5 +1,6 @@
 package com.example.springeventproject.publisher;
 
+import com.example.springeventproject.event.ComedyCircusEvent;
 import com.example.springeventproject.event.TheBigBangTheoryEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -12,5 +13,10 @@ public class ZeeCafePublisher {
     public void streamBigBangTheory(String episodeNo) {
         System.out.println("Zee Cafe : Starting  BBT " + episodeNo);
         applicationEventPublisher.publishEvent(new TheBigBangTheoryEvent(this, episodeNo));
+    }
+
+    public void streamComedyCircus(String episodeNo) {
+        System.out.println("ComedyC Circus : Starting CC " + episodeNo);
+        applicationEventPublisher.publishEvent(new ComedyCircusEvent(this, episodeNo));
     }
 }
